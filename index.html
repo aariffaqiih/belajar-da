@@ -1,153 +1,245 @@
 <!DOCTYPE html>
 <html lang="en">
-   <head>
-      <meta charset="UTF-8" />
-      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <title>Document</title>
-      <link rel="preconnect" href="https://fonts.googleapis.com" />
-      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-      <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Mono:ital,wght@0,300..700;1,300..700&display=swap" rel="stylesheet" />
-      <style>
-         h1 {
-            font-weight: 600;
-         }
-         h2 {
-            font-weight: 500;
-         }
-         h3 {
-            font-weight: 400;
-         }
-         p {
-            font-weight: 300;
-         }
-         * {
-            font-family: "Red Hat Mono", monospace;
-            margin: 0;
-            padding: 0;
-            overflow-x: hidden;
-         }
-         body {
-            background-color: #0e0e0e;
-            color: #ccc;
-         }
-         .judul {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            width: 100vw;
-            padding-top: 4vw;
-            padding-bottom: 4vw;
-         }
-         .judul h1 {
-            font-size: 3vw;
-         }
-         .isi {
-            margin-left: 10vw;
-            margin-right: 10vw;
-         }
-         .progres {
-            margin-bottom: 3vw;
-            background-color: #1e1e1e;
-            border-radius: 2vw;
-            padding: 3vw;
-         }
-         .progres .hari {
-            font-size: 1vw;
-            margin-bottom: 1vw;
-         }
-         .progres .materi h2 {
-            font-size: 1.75vw;
-         }
-         .progres .materi h3 {
-            font-size: 1.25vw;
-            margin-top: 2vw;
-         }
-         .progres .materi p {
-            font-size: 1vw;
-            margin-left: 3vw;
-            margin-top: 1vw;
-         }
-         .bawah {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            width: 100vw;
-            padding-top: 2vw;
-            padding-bottom: 4vw;
-         }
-         .bawah h2 {
-            font-size: 1.75vw;
-         }
-      </style>
-   </head>
-   <body>
-      <div class="judul">
-         <h1>Progres Belajar Data Analyst</h1>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Red+Hat+Mono:ital,wght@0,300..700;1,300..700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      h1 {
+        font-weight: 600;
+      }
+      h2 {
+        font-weight: 500;
+      }
+      h3 {
+        font-weight: 400;
+      }
+      p {
+        font-weight: 300;
+      }
+      a {
+        color: white;
+      }
+      * {
+        font-family: "Red Hat Mono", monospace;
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+      }
+      body {
+        background-color: #0e0e0e;
+        color: #ccc;
+      }
+      .judul {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100vw;
+        padding-top: 4vw;
+        padding-bottom: 4vw;
+      }
+      .judul h1 {
+        font-size: 3vw;
+      }
+      .isi {
+        margin-left: 10vw;
+        margin-right: 10vw;
+      }
+      .progres {
+        margin-bottom: 3vw;
+        background-color: #1e1e1e;
+        border-radius: 2vw;
+        padding: 3vw;
+      }
+      .progres .hari {
+        font-size: 1vw;
+        margin-bottom: 1vw;
+      }
+      .progres .materi h2 {
+        font-size: 1.75vw;
+      }
+      .progres .materi h3 {
+        font-size: 1.25vw;
+        margin-top: 2vw;
+      }
+      .progres .materi p {
+        font-size: 1vw;
+        margin-left: 3vw;
+        margin-top: 1vw;
+      }
+      .images {
+        display: flex;
+        gap: 2vw;
+      }
+      .images .data_cleaning_before {
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-image: url(./DATA_CLEANING_BEFORE.jpg);
+        height: 24vw;
+        width: 50%;
+      }
+      .images .data_cleaning_after {
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-image: url(./DATA_CLEANING_AFTER.jpg);
+        height: 24vw;
+        width: 50%;
+      }
+      .bawah {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100vw;
+        padding-top: 2vw;
+        padding-bottom: 4vw;
+      }
+      .bawah h2 {
+        font-size: 1.75vw;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="judul">
+      <h1>Progres Belajar Data Analyst</h1>
+    </div>
+    <div class="isi">
+      <div class="progres">
+        <div class="hari">
+          <p>Senin, 16 Juni</p>
+        </div>
+        <div class="materi">
+          <h2>1. Tipe-tipe Analisis Data</h2>
+          <h3>1. Deskriptif</h3>
+          <p>Apa yang sudah terjadi?</p>
+          <p>
+            Artinya analisis hal yang terjadi di masa lalu. Jadi, kalo lagi
+            analisis suatu daset yang nemu di Kaggle, atau nemu dataset di
+            tempat lain, itu namanya analisis deskirptif. Jadi, hasil
+            analisisnya mendeskripsikan apa yang terjadi di dataset itu.
+          </p>
+          <p>Ada 2 teknik dalam analitik deskirptif</p>
+          <p>1. Agregasi</p>
+          <p>Ngumpulin data dan disajikan dalam bentuk ringkasan.</p>
+          <p>
+            Contohnya kaya, ngasih tau rata-rata usia karyawan di suatu kantor,
+            atau nyari tau siapa karyawan yang gajinya paling tinggi di kantor
+            itu.
+          </p>
+          <p>2. Data Mining</p>
+          <p>Seperti namanya, singkatnya yaitu ngumpulin data.</p>
+          <h3>2. Diagnostik</h3>
+          <p>Kenapa bisa terjadi seperti itu?</p>
+          <p>
+            Misal ada suatu penurunan performa di bulan tertentu dan mau nyari
+            tau kenapa hal itu besa terjadi, itu namanya analisis diagnostik.
+          </p>
+          <p>
+            Contohnya, kenapa ini bisa terjadi? oh, ternyata karena ada itu.
+          </p>
+          <p>
+            Teknik yang bisa dipake contohnya, teori probabilitas, regresi, dll.
+          </p>
+          <h3>3. Prediktif</h3>
+          <p>Apa yang bakal terjadi di masa depan?</p>
+          <p>
+            Artinya, memprediksi apa yang akan terjadi berdasarkan pola dan tren
+            di masa lalu.
+          </p>
+          <p>
+            Buat ngeprediksi, salah satu caranya bisa pake korelasi antar
+            variabel.
+          </p>
+          <p>ML dan NLP juga udah masuk di ranah ini.</p>
+          <h3>4. Preskriptif</h3>
+          <p>Apa aksi yang bisa dilakukan?</p>
+          <p>
+            Ini yang paling kompleks, contohnya, kenapa Google Maps bisa ngasih
+            rekomendasi rute terbaik? dan aksinya adalah pengemudi mengikuti
+            arahan dari Google Maps.
+          </p>
+        </div>
       </div>
-      <div class="isi">
-         <div class="progres">
-            <div class="hari">
-               <p>Senin, 16 Juni 2025</p>
-            </div>
-            <div class="materi">
-               <h2>1. Tipe-tipe Analisis Data</h2>
-               <h3>1. Deskriptif</h3>
-               <p>Apa yang sudah terjadi?</p>
-               <p>Artinya analisis hal yang terjadi di masa lalu. Jadi, kalo lagi analisis suatu daset yang nemu di Kaggle, atau nemu dataset di tempat lain, itu namanya analisis deskirptif. Jadi, hasil analisisnya mendeskripsikan apa yang terjadi di dataset itu.</p>
-               <p>Ada 2 teknik dalam analitik deskirptif</p>
-               <p>1. Agregasi</p>
-               <p>Ngumpulin data dan disajikan dalam bentuk ringkasan.</p>
-               <p>Contohnya kaya, ngasih tau rata-rata usia karyawan di suatu kantor, atau nyari tau siapa karyawan yang gajinya paling tinggi di kantor itu.</p>
-               <p>2. Data Mining</p>
-               <p>Seperti namanya, singkatnya yaitu ngumpulin data.</p>
-               <h3>2. Diagnostik</h3>
-               <p>Kenapa bisa terjadi seperti itu?</p>
-               <p>Misal ada suatu penurunan performa di bulan tertentu dan mau nyari tau kenapa hal itu besa terjadi, itu namanya analisis diagnostik.</p>
-               <p>Contohnya, kenapa ini bisa terjadi? oh, ternyata karena ada itu.</p>
-               <p>Teknik yang bisa dipake contohnya, teori probabilitas, regresi, dll.</p>
-               <h3>3. Prediktif</h3>
-               <p>Apa yang bakal terjadi di masa depan?</p>
-               <p>Artinya, memprediksi apa yang akan terjadi berdasarkan pola dan tren di masa lalu.</p>
-               <p>Buat ngeprediksi, salah satu caranya bisa pake korelasi antar variabel.</p>
-               <p>ML dan NLP juga udah masuk di ranah ini.</p>
-               <h3>4. Preskriptif</h3>
-               <p>Apa aksi yang bisa dilakukan?</p>
-               <p>Ini yang paling kompleks, contohnya, kenapa Google Maps bisa ngasih rekomendasi rute terbaik? dan aksinya adalah pengemudi mengikuti arahan dari Google Maps.</p>
-               <h2>2. Konsep Analisis Data</h2>
-               <h3>1. Koleksi</h3>
-               <p>A. Peimer</p>
-               <p>1) Kuantitatif</p>
-               <p>a. Analisis Deret Waktu</p>
-               <p>Melihat variabel, tren, interval, dan pola.</p>
-               <p>b. Metode Barometrik</p>
-               <p>Berspekulasi tren masa depan berdasarkan kondisi saat ini. Kalo kejadian di masa lalu dirasa relevan untuk memprediksi masa depan, maka itu bisa jadi indikator.</p>
-               <p>2) Kualitatif</p>
-               <p>a. Survei</p>
-               <p>b. Wawancara</p>
-               <p>c. Kuesioner</p>
-               <p>d. Digsite</p>
-               <p>Ini katanya platform buat wawancara, minta pendapat, dan diskusi kelompok.</p>
-               <p>B. Sekunder</p>
-               <p>1) Sumber Internal</p>
-               <p>a. Laporan keuangan</p>
-               <p>b. Laporan penjualan</p>
-               <p>c. Ringkasan eksekutif</p>
-               <p>2) Sumber Eksternal</p>
-               <p>a. Laporan pemerintah</p>
-               <p>b. Siaran pers</p>
-               <p>c. Jurnal</p>
-               <p>d. Perpustakaan</p>
-               <p>e. Internet</p>
-               <h3>2. Pembersihan</h3>
-               <h3>3. Eksplorasi</h3>
-               <h3>4. Visualisasi</h3>
-               <h3>5. Analisis Statistik</h3>
-               <h3>6. ML</h3>
-            </div>
-         </div>
+      <div class="progres">
+        <div class="hari">
+          <p>Selasa, 17 Juni - Kamis, 19 Juni</p>
+        </div>
+        <div class="materi">
+          <h2>2. Konsep Analisis Data</h2>
+          <h3>1. Koleksi</h3>
+          <p>A. Peimer</p>
+          <p>1) Kuantitatif</p>
+          <p>a. Analisis Deret Waktu</p>
+          <p>Melihat variabel, tren, interval, dan pola.</p>
+          <p>b. Metode Barometrik</p>
+          <p>
+            Berspekulasi tren masa depan berdasarkan kondisi saat ini. Kalo
+            kejadian di masa lalu dirasa relevan untuk memprediksi masa depan,
+            maka itu bisa jadi indikator.
+          </p>
+          <p>2) Kualitatif</p>
+          <p>a. Survei</p>
+          <p>b. Wawancara</p>
+          <p>c. Kuesioner</p>
+          <p>d. Digsite</p>
+          <p>
+            Ini katanya platform buat wawancara, minta pendapat, dan diskusi
+            kelompok.
+          </p>
+          <p>B. Sekunder</p>
+          <p>1) Sumber Internal</p>
+          <p>a. Laporan keuangan</p>
+          <p>b. Laporan penjualan</p>
+          <p>c. Ringkasan eksekutif</p>
+          <p>2) Sumber Eksternal</p>
+          <p>a. Laporan pemerintah</p>
+          <p>b. Siaran pers</p>
+          <p>c. Jurnal</p>
+          <p>d. Perpustakaan</p>
+          <p>e. Internet</p>
+          <h3>2. Pembersihan</h3>
+          <div class="images">
+            <div class="data_cleaning_before"></div>
+            <div class="data_cleaning_after"></div>
+          </div>
+          <p>
+            Dataset:
+            <a
+              href="https://www.kaggle.com/datasets/elainedazzio/small-dirty-dataset-for-practice"
+              >https://www.kaggle.com/datasets/elainedazzio/small-dirty-dataset-for-practice</a
+            >
+          </p>
+          <p>Langkah-langkah:</p>
+          <p>1. Kolom A: ganti dengan UPPERCASE</p>
+          <p>2. Kolom B: Perbaiki dengan PROPER</p>
+          <p>3. Kolom C: ganti dengan LOWER, ganti NULL dengan N/A</p>
+          <p>
+            4. Kolom D: ubah nan menjadi N/A, ganti formatnya menjadi number
+          </p>
+          <p>5. Kolom E: ganti NULL dengan N/A, ubah format menjadi date</p>
+          <p>
+            6. Kolom F: cari value unik dengan UNIQUE, kemudian ganti kategori
+            yang masih typo, contohnya Beuty menjadi Beauty
+          </p>
+          <p>7. Kolom G: ganti NULL dengan N/A, ganti "two" menjadi 2</p>
+          <p>8. Kolom H: ganti "no" menjadi FALSE, ganti "yes" menjadi TRUE</p>
+          <p>9. Kolom I: rapikan dengan PROPER</p>
+          <h3>3. Eksplorasi</h3>
+          <h3>4. Visualisasi</h3>
+          <h3>5. Analisis Statistik</h3>
+          <h3>6. ML</h3>
+        </div>
       </div>
-      <div class="bawah">
-         <h2>Tetap Semangat dan Konsisten!</h2>
-      </div>
-   </body>
+    </div>
+    <div class="bawah">
+      <h2>Tetap Semangat dan Konsisten!</h2>
+    </div>
+  </body>
 </html>
