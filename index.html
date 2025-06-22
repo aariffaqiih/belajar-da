@@ -28,8 +28,16 @@
       }
       iframe {
         margin-top: 2vw;
+        height: 32vw;
         width: 100%;
-        height: 20vw;
+      }
+      img {
+        margin-top: 1vw;
+        margin-bottom: 1vw;
+        margin-left: 3vw;
+        height: 16vw;
+        width: auto;
+        object-fit: contain;
       }
       * {
         font-family: "Red Hat Mono", monospace;
@@ -80,23 +88,6 @@
       }
       .images {
         display: flex;
-        gap: 2vw;
-      }
-      .images .data_cleaning_before {
-        background-position: center;
-        background-size: contain;
-        background-repeat: no-repeat;
-        background-image: url(./DATA_CLEANING_BEFORE.jpg);
-        height: 24vw;
-        width: 50%;
-      }
-      .images .data_cleaning_after {
-        background-position: center;
-        background-size: contain;
-        background-repeat: no-repeat;
-        background-image: url(./DATA_CLEANING_AFTER.jpg);
-        height: 24vw;
-        width: 50%;
       }
       .bawah {
         display: flex;
@@ -174,7 +165,7 @@
       </div>
       <div class="progres">
         <div class="hari">
-          <p>Selasa, 17 Juni - Kamis, 19 Juni</p>
+          <p>Selasa, 17 Juni - Kamis, 21 Juni</p>
         </div>
         <div class="materi">
           <h2>2. Konsep Analisis Data</h2>
@@ -210,10 +201,6 @@
           <p>d. Perpustakaan</p>
           <p>e. Internet</p>
           <h3>2. Pembersihan</h3>
-          <div class="images">
-            <div class="data_cleaning_before"></div>
-            <div class="data_cleaning_after"></div>
-          </div>
           <p>
             Dataset:
             <a
@@ -221,6 +208,10 @@
               >https://www.kaggle.com/datasets/elainedazzio/small-dirty-dataset-for-practice</a
             >
           </p>
+          <div class="images">
+            <img src="./KONSEP/DATA_CLEANING_BEFORE.jpg" alt="" />
+            <img src="./KONSEP/DATA_CLEANING_AFTER.jpg" alt="" />
+          </div>
           <p>Langkah-langkah:</p>
           <p>1. Kolom A: ganti dengan UPPERCASE</p>
           <p>2. Kolom B: Perbaiki dengan PROPER</p>
@@ -313,7 +304,131 @@
             yang ga terstruktur biar bisa buat ambil keputusan atau memprediksi
             masa depan berdasarkan tren masa lalu.
           </p>
+          <p>6 Jenis analisis Statistik:</p>
+          <p>1. Analisis Deskriptif</p>
+          <p>2. Analisis Inferensial</p>
+          <p>
+            Yaitu menarik kesimpulan tentang populasi yang diambil dari sampel.
+            Misalnya mau ngukur suhu badan, tapi cuma ambil 100 orang dari total
+            semua penduduk di kota itu.
+          </p>
+          <p>Jenis-jenis Statistik Inferensial:</p>
+          <p>1. Uji Hipotesis</p>
+          <p>
+            Metode buat mengambil hipotesis dari suatu sampel. Misalkan di suatu
+            perushaan ekspor impor telah mengubah sistem logistik baru, kemudian
+            uji hipotesis akan membantu menentukan apakah sistem yang baru ini
+            bisa mempercepat proses pengiriman atau tidak?
+          </p>
+          <p>
+            Maka akan ada 2 rumusan hipotesis, yaitu hipotesis 0 untuk menolak
+            hipotesis, dan hipotesis alternatif untuk membuktikan apakah
+            hipotesisnya benar?
+          </p>
+          <p>2. Z Test</p>
+          <p>Dipake, kalo:</p>
+          <p>(1). Sampelnya lebih besar atau sama dengan 30 (n >= 30).</p>
+          <p>(2). Simpangan baku populasi sudah diketahui</p>
+          <p>
+            Misalkan ada perushaan logistik yang bilang bahwa waktu pengiriman
+            internasional adalah 12 hari, diketahui simpangan baku populasinya 2
+            hari
+          </p>
+          <p>
+            Buat nguji klaim ini, ambil data lebih dari 30, katakanlah 36 data
+            pengiriman.
+          </p>
+          <p></p>
           <h3>6. ML</h3>
+        </div>
+      </div>
+      <div class="progres">
+        <div class="hari">
+          <p>Senin, 16 Juni</p>
+        </div>
+        <div class="materi">
+          <h2>3. Analisis dengan Excel</h2>
+          <p>
+            Dataset:
+            <a
+              href="https://www.kaggle.com/datasets/arinzesym/hr-analytics-cleaned-employee-attrition-dataset?select=hr_cleaned_analysis.csv"
+              >https://www.kaggle.com/datasets/arinzesym/hr-analytics-cleaned-employee-attrition-dataset?select=hr_cleaned_analysis.csv</a
+            >
+          </p>
+          <h3>1. IF</h3>
+          <div class="images">
+            <img src="./EXCEL/IF.png" alt="" />
+          </div>
+          <p>
+            =IFS([@Age] <= 19, "Teenager", [@Age] <= 59, "Adult", [@Age] > 59,
+            "Old")
+          </p>
+          <h3>2. DATEDIF</h3>
+          <div class="images"><img src="./EXCEL/DATEDIF.png" alt="" /></div>
+          <p>=DATEDIF(A2, A3, "Y")</p>
+          <p>
+            Berfungsi untuk melihat berapa jarak tahun dari tanggal pertama dan
+            tanggal kedua
+          </p>
+          <p>=DATEDIF(A2, A3, "M")</p>
+          <p>
+            Berfungsi untuk melihat berapa jarak bulan dari tanggal pertama dan
+            tanggal kedua
+          </p>
+          <p>=DATEDIF(A2, A3, "D")</p>
+          <p>
+            Berfungsi untuk melihat berapa jarak hari dari tanggal pertama dan
+            tanggal kedua
+          </p>
+          <h3>3. LOOKUP</h3>
+          <div class="images"><img src="./EXCEL/LOOKUP.png" alt="" /></div>
+          <p>(1). VLOOKUP</p>
+          <p>=VLOOKUP(F3, DATASET!A:B, 2, TRUE)</p>
+          <p>=VLOOKUP(F3, DATASET!A:L, 12, TRUE)</p>
+          <p>=VLOOKUP(F3, DATASET!A:S, 19, TRUE)</p>
+          <p>(2). XLOOKUP</p>
+          <p>=XLOOKUP(K3, DATASET!A:A, DATASET!G:G, TRUE)</p>
+          <p>=XLOOKUP(K3, DATASET!A:A, DATASET!J:J, TRUE)</p>
+          <p>=XLOOKUP(K3, DATASET!A:A, DATASET!P:P, TRUE)</p>
+          <h3>4. REPLACE/SUBTITUTE</h3>
+          <div class="images">
+            <img src="./EXCEL/REPLACE.png" alt="" />
+            <img src="./EXCEL/SUBTITUTE.png" alt="" />
+          </div>
+          <p>=REPLACE([@[Percent Salary Hike2]], 1, 2, "")</p>
+          <p>=SUBSTITUTE([@[Distance From Home]], "Close", "Near")</p>
+          <h3>5. UPPER/LOWER/PROPER</h3>
+          <p>Sudah dilakukan di praktik data claning, di bagian 2.2</p>
+          <h3>6. CONCAT</h3>
+          <div class="images"><img src="./EXCEL/CONCAT.png" alt="" /></div>
+          <p>=CONCAT([@Department], " ", [@Gender])</p>
+          <h3>7. TRIM</h3>
+          <p>Sudah dilakukan di praktik data claning, di bagian 2.2</p>
+          <h3>8. AVERAGE</h3>
+          <div class="images">
+            <img src="./EXCEL/AVERAGE.png" alt="" />
+          </div>
+          <p>(1). AVERAGE</p>
+          <p>=AVERAGE(DATASET!B:B)</p>
+          <p>=AVERAGE(DATASET!AH:AH)</p>
+          <p>(2). AVERAGEIF</p>
+          <p>=AVERAGEIF(DATASET!G:G, "Sales", DATASET!B:B)</p>
+          <p>=AVERAGEIF(DATASET!G:G, "Sales", DATASET!AH:AH)</p>
+          <p>(3). AVERAGEIFS</p>
+          <p>
+            =AVERAGEIFS(DATASET!B:B, DATASET!G:G, "Sales", DATASET!M:M, "Male")
+          </p>
+          <p>
+            =AVERAGEIFS(DATASET!AH:AH, DATASET!G:G, "Sales", DATASET!M:M,
+            "Male")
+          </p>
+          <p>
+            =AVERAGEIFS(DATASET!U:U, DATASET!G:G, "Sales", DATASET!M:M, "Male")
+          </p>
+          <h3>9. COUNT</h3>
+          <div class="images"><img src="./EXCEL/COUNT.png" alt="" /></div>
+          <h3>10. SUM</h3>
+          <h3>11. MIN/MAX</h3>
         </div>
       </div>
     </div>
